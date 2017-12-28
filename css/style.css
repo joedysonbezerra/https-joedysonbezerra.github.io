@@ -75,10 +75,10 @@ nav ul li a:hover {
 
 
 #banner {
-    width: 100%;
     position: relative;
     background-image: url(../img/mesa.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: #ffffff;
     display: flex;
