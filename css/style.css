@@ -1,3 +1,5 @@
+/* Fonte personalizada projeto */
+
 @font-face {
     font-family: 'Wolf-in-the-City';
     src: url('Wolf-in-the-City.ttf.woff') format('woff'),
@@ -9,7 +11,10 @@
 }
 
 .alinha {
-    width: 1120px;
+    margin: 0 auto;
+    /* 960 */
+    width: 67.5%;
+
 }
 
 .ativo {
@@ -25,12 +30,10 @@ header {
     z-index: 1;
 }
 
+
 nav {
-    width: 1120px;
     height: 80px;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,30 +41,35 @@ nav {
 }
 
 nav img {
-    margin-top: 1%;
-    margin-left: 10%;
+    /* -1.2px /80px */
+    margin-top: -1.6%;
+    /* =~ 30px/960px */
+    margin-left: 3%;
     height: 60px;
     float: left;
 }
 
 nav ul {
-    margin-top: 2.9%;
+    /* =~ 2.5px /80px */
+    margin-top: 3.2%;
     margin-left: 60%;
     display: flex;
+    /* itens alinhado em linha */
     flex-direction: row;
     align-items: center;
     list-style: none;
 }
 
 nav ul li {
-    margin-left: 2.6%;
+    /* =~ 30px /960px */
+    margin-left: 3%;
     text-align: center;
 }
 
 nav ul li a {
     width: 100%;
     display: inline-block;
-    font-size: 0.87em;
+    font-size: 0.86em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #000000;
@@ -77,12 +85,14 @@ nav ul li a:hover {
 #banner {
     position: relative;
     background-image: url(../img/mesa.png);
+    /* A imagem ocupar todo o espaço */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    /* itens alinhado em coluna */
     align-items: center;
     text-align: center;
 }
@@ -93,6 +103,7 @@ nav ul li a:hover {
 }
 
 #titulo {
+    /* =~ 55px /700px */
     margin-top: 8%;
     font-family: 'Wolf-in-the-City';
     font-size: 4.5em;
@@ -102,7 +113,7 @@ nav ul li a:hover {
 }
 
 #frase1 {
-    margin-top: -3.1%;
+    margin-top: -3.7%;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
     font-weight: 700;
@@ -119,10 +130,15 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
+.space {
+    /* =~ 22px /700px */
+    margin-top: 3%;
+}
+
 #botao-saiba {
-    padding: 5px 50px;
+    padding: 0.4% 3.8%;
     border: 0;
-    border-radius: 300px;
+    border-radius: 338px;
     border-color: #ED5A70;
     background-color: #ED5A70;
     color: #fff;
@@ -139,7 +155,11 @@ nav ul li a:hover {
     color: #ED5A70;
 }
 
+
 @media (min-width: 1400px) {
+    #titulo {
+        margin-top: 2%;
+    }
     #banner {
         padding-top: 100px;
     }
