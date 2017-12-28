@@ -8,6 +8,9 @@
     font-style: normal;
 }
 
+.alinha {
+    width: 1120px;
+}
 
 .ativo {
     color: #ED5A70;
@@ -69,10 +72,13 @@ nav ul li a:hover {
     color: #ED5A70;
 }
 
+
+
 #banner {
-    background-image: url(/img/mesa.png);
+    width: 100%;
+    position: relative;
+    background-image: url(../img/mesa.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     background-color: #ffffff;
     display: flex;
@@ -89,4 +95,52 @@ nav ul li a:hover {
 #titulo {
     margin-top: 8%;
     font-family: 'Wolf-in-the-City';
+    font-size: 4.5em;
+    font-weight: 400;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+#frase1 {
+    margin-top: -3.1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+#frase2 {
+    margin-top: -0.9%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+#botao-saiba {
+    padding: 5px 50px;
+    border: 0;
+    border-radius: 300px;
+    border-color: #ED5A70;
+    background-color: #ED5A70;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+
+}
+
+#botao-saiba:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #ED5A70;
+}
+
+@media (min-width: 1400px) {
+    #banner {
+        padding-top: 100px;
+    }
 }
