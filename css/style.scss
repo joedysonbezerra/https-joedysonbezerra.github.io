@@ -1,6 +1,10 @@
 $cor-base:#ED5A70;
 $cor-terciaria:#EA2F4A;
-$cor-secundaria:#ffffff;
+$cor-secundaria:#fff;
+$cor-quaternaria:#f3f4f4;
+$cor-sombra:#000;
+$cor-font-principal:#1F1F1F;
+
 /* Fonte personalizada projeto */
 
 @font-face {
@@ -37,7 +41,7 @@ $cor-secundaria:#ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
-    color: #1F1F1F;
+    color: $cor-font-principal;
     text-transform: uppercase;
 }
 
@@ -59,7 +63,7 @@ header {
     height: 80px;
     background-color: $cor-secundaria;
     position: fixed;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
     z-index: 1;
 }
 
@@ -105,7 +109,7 @@ nav ul li a {
     font-size: 0.86em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: #000000;
+    color: $cor-sombra;
     text-decoration: none;
 }
 
@@ -142,7 +146,7 @@ nav ul li a:hover {
     font-family: 'Wolf-in-the-City';
     font-size: 4.5em;
     font-weight: 400;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
     color: $cor-secundaria;
 }
 
@@ -151,7 +155,7 @@ nav ul li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
     font-weight: 700;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
     color: $cor-secundaria;
 }
 
@@ -160,7 +164,7 @@ nav ul li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
     font-weight: 300;
-    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
     color: $cor-secundaria;
     margin-bottom: 3%;
 }
@@ -191,14 +195,14 @@ nav ul li a:hover {
     margin: -1.8% auto;
     width: 100%;
     height: 500px;
-    background-color: #f3f4f4;
+    background-color: $cor-quaternaria;
     position: relative;
     display: flex;
     flex-direction: column;
     /* itens alinhado em coluna */
     align-items: center;
     text-align: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
 }
 
 #sobre p {
@@ -208,7 +212,7 @@ nav ul li a:hover {
     font-size: 1.05em;
     font-weight: 300;
     line-height: 25px;
-    color: #1F1F1F;
+    color: $cor-font-principal;
     padding-bottom: 3.5%;
 }
 
@@ -216,7 +220,7 @@ nav ul li a:hover {
     padding: 0.4% 3.8%;
     border: thin solid $cor-terciaria;
     border-radius: 338px;
-    background-color: #f3f4f4;
+    background-color: $cor-quaternaria;
     color: $cor-terciaria;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -284,7 +288,7 @@ nav ul li a:hover {
     /* itens alinhado em coluna */
     align-items: center;
     text-align: center;
-    box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px -1px 10px rgba($cor-sombra, 0.2);
     padding-bottom: 6%;
 }
 
@@ -303,7 +307,7 @@ nav ul li a:hover {
     margin-top: 3%;
     margin-left: 2%;
     margin-right: 0.5%;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
 }
 
 #contato {
@@ -389,7 +393,7 @@ footer {
     font-size: 0.9em;
     font-weight: 400;
     color: #2B2C30;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
     margin-bottom: 5px;
     align-items: center;
     text-align: center;

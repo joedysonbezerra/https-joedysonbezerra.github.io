@@ -38,7 +38,7 @@
 header {
   width: 100%;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #fff;
   position: fixed;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   z-index: 1; }
@@ -79,7 +79,7 @@ nav ul li a {
   font-size: 0.86em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  color: #000000;
+  color: #000;
   text-decoration: none; }
 
 nav ul li a:hover {
@@ -93,7 +93,7 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   /* itens alinhado em coluna */
@@ -111,7 +111,7 @@ nav ul li a:hover {
   font-size: 4.5em;
   font-weight: 400;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  color: #ffffff; }
+  color: #fff; }
 
 #frase1 {
   margin-top: -3.7%;
@@ -119,7 +119,7 @@ nav ul li a:hover {
   font-size: 1.4em;
   font-weight: 700;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  color: #ffffff; }
+  color: #fff; }
 
 #frase2 {
   margin-top: -0.9%;
@@ -127,7 +127,7 @@ nav ul li a:hover {
   font-size: 1.4em;
   font-weight: 300;
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 3%; }
 
 #botao-saiba {
@@ -136,15 +136,15 @@ nav ul li a:hover {
   border-radius: 338px;
   border-color: #ED5A70;
   background-color: #ED5A70;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   font-weight: 300; }
 
 #botao-saiba:hover {
-  border-color: #ffffff;
-  background-color: #ffffff;
+  border-color: #fff;
+  background-color: #fff;
   color: #ED5A70; }
 
 /* Sobre */
@@ -185,13 +185,13 @@ nav ul li a:hover {
 #habilidades:hover {
   border-color: #EA2F4A;
   background-color: #EA2F4A;
-  color: #ffffff; }
+  color: #fff; }
 
 /* Servicos */
 #servico {
   width: 100%;
   height: auto;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -253,7 +253,7 @@ nav ul li a:hover {
   margin: -1.8% auto;
   width: 100%;
   height: 500px;
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
