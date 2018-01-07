@@ -136,15 +136,15 @@ nav ul li a:hover {
   border-radius: 338px;
   border-color: #ED5A70;
   background-color: #ED5A70;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   font-weight: 300; }
 
 #botao-saiba:hover {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: #ffffff;
+  background-color: #ffffff;
   color: #ED5A70; }
 
 /* Sobre */
@@ -185,13 +185,13 @@ nav ul li a:hover {
 #habilidades:hover {
   border-color: #EA2F4A;
   background-color: #EA2F4A;
-  color: #fff; }
+  color: #ffffff; }
 
 /* Servicos */
 #servico {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
