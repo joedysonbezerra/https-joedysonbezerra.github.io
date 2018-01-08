@@ -1,9 +1,38 @@
+//variaveis sass
 $cor-base:#ED5A70;
-$cor-terciaria:#EA2F4A;
 $cor-secundaria:#fff;
+$cor-terciaria:#EA2F4A;
 $cor-quaternaria:#f3f4f4;
 $cor-sombra:#000;
-$cor-font-principal:#1F1F1F;
+$cor-font-titulo:#1F1F1F;
+$cor-font-conteudo:#2B2C30;
+
+// mixins sass
+@mixin flex ($direcao) {
+    display: flex;
+    flex-direction: $direcao;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin font-open($tamanho, $tipo) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $tamanho;
+    font-weight: $tipo;
+
+}
+
+@mixin font-work($tamanho, $tipo) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: $tamanho;
+    font-weight: $tipo;
+
+}
+
+@mixin sombra($tamanho0:2px, $tamanho1:2px, $tamanho2:2px) {
+    box-shadow: $tamanho0 $tamanho1 $tamanho2 rgba($cor-sombra, 0.2);
+
+}
 
 /* Fonte personalizada projeto */
 
@@ -17,9 +46,7 @@ $cor-font-principal:#1F1F1F;
     font-style: normal;
 }
 
-/* Classes Importantes */
-
-/* Alinhamento do conteudo para um tamanho padrão*/
+/* Geral */
 
 .alinha {
     margin: 0 auto;
@@ -28,24 +55,19 @@ $cor-font-principal:#1F1F1F;
 
 }
 
-/* Classe para o menu*/
-
 .ativo {
     color: $cor-base;
 }
 
-/* Classe para os Titulos de cada conteudo*/
+
 
 .titulo {
     margin-top: 8%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    font-weight: 700;
-    color: $cor-font-principal;
+    @include font-open(1.5em,
+    700);
+    color: $cor-font-titulo;
     text-transform: uppercase;
 }
-
-/* Classe para os Linha de cada conteudo*/
 
 .linha {
     width: 5%;
@@ -56,14 +78,14 @@ $cor-font-principal:#1F1F1F;
     background-color: $cor-terciaria;
 }
 
-/* Cabeçalho */
+/* header */
 
 header {
     width: 100%;
     height: 80px;
-    background-color: $cor-secundaria;
+    background-color: rgba($cor-secundaria, 0.97);
     position: fixed;
-    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
+    @include sombra;
     z-index: 1;
 }
 
@@ -75,48 +97,40 @@ nav {
     flex-direction: row;
     align-items: center;
 
-}
+    img {
+        /* -1.2px /80px */
+        margin-top: -1.6%;
+        /* =~ 30px/960px */
+        margin-left: 3%;
+        height: 60px;
+        float: left;
+    }
+    ul {
+        /* =~ 2.5px /80px */
+        margin-top: 3.2%;
+        margin-left: 60%;
+        @include flex(row);
+        list-style: none;
+    }
 
-nav img {
-    /* -1.2px /80px */
-    margin-top: -1.6%;
-    /* =~ 30px/960px */
-    margin-left: 3%;
-    height: 60px;
-    float: left;
-}
+    li {
+        /* =~ 30px /960px */
+        margin-left: 3%;
+    }
 
-nav ul {
-    /* =~ 2.5px /80px */
-    margin-top: 3.2%;
-    margin-left: 60%;
-    display: flex;
-    /* itens alinhado em linha */
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-}
+    a {
+        width: 100%;
+        display: inline-block;
+        @include font-open(0.86em,
+        600);
+        color: $cor-sombra;
+        text-decoration: none;
 
-nav ul li {
-    /* =~ 30px /960px */
-    margin-left: 3%;
-    text-align: center;
+        &:hover {
+            color: $cor-base;
+        }
+    }
 }
-
-nav ul li a {
-    width: 100%;
-    display: inline-block;
-    font-size: 0.86em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    color: $cor-sombra;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: $cor-base;
-}
-
 
 /* Banner de Entrada */
 
@@ -128,11 +142,7 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-color: $cor-secundaria;
-    display: flex;
-    flex-direction: column;
-    /* itens alinhado em coluna */
-    align-items: center;
-    text-align: center;
+    @include flex(column);
 }
 
 #banner section {
@@ -152,18 +162,16 @@ nav ul li a:hover {
 
 #frase1 {
     margin-top: -3.7%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.4em;
-    font-weight: 700;
+    @include font-open(1.4em,
+    700);
     text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
     color: $cor-secundaria;
 }
 
 #frase2 {
     margin-top: -0.9%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.4em;
-    font-weight: 300;
+    @include font-open(1.4em,
+    300);
     text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
     color: $cor-secundaria;
     margin-bottom: 3%;
@@ -177,9 +185,8 @@ nav ul li a:hover {
     background-color: $cor-base;
     color: $cor-secundaria;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    @include font-open(1em,
+    300);
 
 }
 
@@ -197,22 +204,17 @@ nav ul li a:hover {
     height: 500px;
     background-color: $cor-quaternaria;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    /* itens alinhado em coluna */
-    align-items: center;
-    text-align: center;
-    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
+    @include flex(column);
+    @include sombra;
 }
 
 #sobre p {
     margin-top: 5%;
     width: 95%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.05em;
-    font-weight: 300;
+    @include font-open(1.05em,
+    300);
     line-height: 25px;
-    color: $cor-font-principal;
+    color: $cor-font-conteudo;
     padding-bottom: 3.5%;
 }
 
@@ -223,9 +225,8 @@ nav ul li a:hover {
     background-color: $cor-quaternaria;
     color: $cor-terciaria;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    @include font-open(1em,
+    300);
 
 }
 
@@ -241,11 +242,8 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     background-color: $cor-secundaria;
-    display: flex;
-    flex-direction: row;
+    @include flex(row);
     flex-wrap: nowrap;
-    text-align: center;
-    align-items: center;
     margin-bottom: 8%;
 }
 
@@ -264,12 +262,13 @@ nav ul li a:hover {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 700;
+    color: $cor-font-titulo;
 }
 
 .tamanho-servico p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
+    @include font-work(1em,
+    300);
+    color: $cor-font-conteudo;
 }
 
 
@@ -283,21 +282,15 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    /* itens alinhado em coluna */
-    align-items: center;
-    text-align: center;
-    box-shadow: 1px -1px 10px rgba($cor-sombra, 0.2);
+    @include flex(column);
+    @include sombra(1px,
+    -1px,
+    10px);
     padding-bottom: 6%;
 }
 
 #porfolio article {
-    display: flex;
-    flex-direction: row;
-    /* itens alinhado em linha */
-    align-items: center;
-    text-align: center;
+    @include flex(row);
 
 }
 
@@ -307,7 +300,7 @@ nav ul li a:hover {
     margin-top: 3%;
     margin-left: 2%;
     margin-right: 0.5%;
-    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
+    @include sombra;
 }
 
 #contato {
@@ -316,21 +309,18 @@ nav ul li a:hover {
     height: 500px;
     background-color: $cor-secundaria;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    /* itens alinhado em coluna */
-    align-items: center;
-    text-align: center;
+    @include flex(column);
 }
+
+/* Portfolio */
 
 #contato p {
     margin-top: 5%;
     width: 38%;
     margin-left: 31%;
     margin-right: 31%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.05em;
-    font-weight: 400;
+    @include font-open(1.05em,
+    400);
     line-height: 22px;
     color: #727171;
     padding-bottom: 3.5%;
@@ -340,12 +330,7 @@ nav ul li a:hover {
     margin: 3px;
     width: 100%;
     position: relative;
-    display: flex;
-    /* itens alinhado em linha*/
-    flex-direction: row;
-
-    align-items: center;
-    text-align: center;
+    @include flex(row);
 }
 
 #contato-info section {
@@ -353,10 +338,9 @@ nav ul li a:hover {
 }
 
 #contato-info section p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    color: #2B2C30;
+    @include font-open(1em,
+    400);
+    color: $cor-font-conteudo;
 }
 
 #contato-info section img {
@@ -374,11 +358,7 @@ nav ul li a:hover {
     margin-left: 38%;
     margin-bottom: 3px;
     padding-left: 0.3%;
-    display: flex;
-    flex-direction: row;
-    /* itens alinhado em linha */
-    align-items: center;
-    text-align: center;
+    @include flex(row);
 }
 
 #icones-redesocial img {
@@ -386,17 +366,16 @@ nav ul li a:hover {
     height: 80%;
 }
 
+/* Footer */
+
 footer {
     margin-top: 5px;
     padding-left: 0.5%;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 0.9em;
-    font-weight: 400;
-    color: #2B2C30;
+    @include font-work(0.9em,
+    400);
+    color: $cor-font-conteudo;
     text-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
     margin-bottom: 5px;
-    align-items: center;
-    text-align: center;
 }
 
 @media (min-width: 1400px) {
