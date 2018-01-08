@@ -1,4 +1,13 @@
 @charset "UTF-8";
+#banner h1, #frase1, #frase2, #contato-info section p, footer {
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3); }
+
+header, #sobre, #portfolio img {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+#portfolio, #contato {
+  box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.2); }
+
 /* Fonte personalizada projeto */
 @font-face {
   font-family: 'Wolf-in-the-City';
@@ -36,7 +45,6 @@ header {
   height: 80px;
   background-color: rgba(255, 255, 255, 0.97);
   position: fixed;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
 nav {
@@ -88,26 +96,22 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center; }
-
-#banner section {
-  width: 100%;
-  height: 700px; }
-
-#banner h1 {
-  /* =~ 55px /700px */
-  margin-top: 8%;
-  font-family: 'Wolf-in-the-City';
-  font-size: 4.5em;
-  font-weight: 400;
-  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-  color: #fff; }
+  #banner section {
+    width: 100%;
+    height: 700px; }
+  #banner h1 {
+    /* =~ 55px /700px */
+    margin-top: 8%;
+    font-family: 'Wolf-in-the-City';
+    font-size: 4.5em;
+    font-weight: 400;
+    color: #fff; }
 
 #frase1 {
   margin-top: -3.7%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
   font-weight: 700;
-  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   color: #fff; }
 
 #frase2 {
@@ -115,7 +119,6 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
   font-weight: 300;
-  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
   color: #fff;
   margin-bottom: 3%; }
 
@@ -130,34 +133,32 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   font-weight: 300; }
-
-#botao-saiba:hover {
-  border-color: #fff;
-  background-color: #fff;
-  color: #ED5A70; }
+  #botao-saiba:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #ED5A70; }
 
 /* Sobre */
 #sobre {
   margin: -1.8% auto;
   width: 100%;
-  height: 500px;
+  height: auto;
   background-color: #f3f4f4;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
-
-#sobre p {
-  margin-top: 5%;
-  width: 95%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.05em;
-  font-weight: 300;
-  line-height: 25px;
-  color: #2B2C30;
-  padding-bottom: 3.5%; }
+  padding-bottom: 5%; }
+  #sobre p {
+    margin-top: 5%;
+    width: 95%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+    font-weight: 300;
+    line-height: 25px;
+    color: #2B2C30;
+    padding-bottom: 3.5%; }
 
 #habilidades {
   padding: 0.4% 3.8%;
@@ -169,11 +170,10 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   font-weight: 300; }
-
-#habilidades:hover {
-  border-color: #EA2F4A;
-  background-color: #EA2F4A;
-  color: #fff; }
+  #habilidades:hover {
+    border-color: #EA2F4A;
+    background-color: #EA2F4A;
+    color: #fff; }
 
 /* Servicos */
 #servico {
@@ -194,18 +194,16 @@ nav {
   margin-left: 2%;
   margin-right: 1%;
   margin-top: 6%; }
-
-.tamanho-servico h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  font-weight: 700;
-  color: #1F1F1F; }
-
-.tamanho-servico p {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  color: #2B2C30; }
+  .tamanho-servico h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1F1F1F; }
+  .tamanho-servico p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: #2B2C30; }
 
 /* Portfolio */
 #portfolio {
@@ -220,46 +218,41 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.2);
   padding-bottom: 6%; }
+  #portfolio img {
+    width: 30.333333%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 0.5%; }
 
-#porfolio article {
+article {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center; }
 
-#portfolio img {
-  width: 30.333333%;
-  float: left;
-  margin-top: 3%;
-  margin-left: 2%;
-  margin-right: 0.5%;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
-
 #contato {
   margin: -1.8% auto;
   width: 100%;
-  height: 500px;
+  height: auto;
   background-color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center; }
-
-/* Portfolio */
-#contato p {
-  margin-top: 5%;
-  width: 38%;
-  margin-left: 31%;
-  margin-right: 31%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.05em;
-  font-weight: 400;
-  line-height: 22px;
-  color: #727171;
-  padding-bottom: 3.5%; }
+  #contato p {
+    margin-top: 5%;
+    width: 38%;
+    margin-left: 31%;
+    margin-right: 31%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+    font-weight: 400;
+    line-height: 22px;
+    color: #727171;
+    padding-bottom: 3.5%; }
 
 #contato-info {
   margin: 3px;
@@ -269,18 +262,15 @@ nav {
   flex-direction: row;
   align-items: center;
   text-align: center; }
-
-#contato-info section {
-  width: 50%; }
-
-#contato-info section p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  color: #2B2C30; }
-
-#contato-info section img {
-  width: 50px; }
+  #contato-info section {
+    width: 50%; }
+    #contato-info section p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      color: #2B2C30; }
+    #contato-info section img {
+      width: 50px; }
 
 #email {
   padding-left: 5.5%; }
@@ -294,21 +284,19 @@ nav {
   flex-direction: row;
   align-items: center;
   text-align: center; }
-
-#icones-redesocial img {
-  width: 80%;
-  height: 80%; }
+  #icones-redesocial img {
+    width: 80%;
+    height: 80%; }
 
 /* Footer */
 footer {
   margin-top: 5px;
   padding-left: 0.5%;
+  padding-bottom: 5px;
   font-family: 'Work Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 400;
-  color: #2B2C30;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 5px; }
+  color: #2B2C30; }
 
 @media (min-width: 1400px) {
   #banner {
