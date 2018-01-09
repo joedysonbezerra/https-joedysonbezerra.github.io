@@ -1,0 +1,21 @@
+// mixins sass
+@mixin flex ($direcao) {
+    display: flex;
+    flex-direction: $direcao;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin font-open($tamanho, $tipo) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $tamanho;
+    font-weight: $tipo;
+
+}
+
+@mixin font-work($tamanho, $tipo) {
+    font-family: 'Work Sans', sans-serif;
+    font-size: $tamanho;
+    font-weight: $tipo;
+
+}

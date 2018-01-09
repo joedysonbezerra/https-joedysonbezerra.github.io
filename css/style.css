@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #banner h1, #frase1, #frase2, #contato-info section p, footer {
   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3); }
 
@@ -54,14 +53,11 @@ nav {
   flex-direction: row;
   align-items: center; }
   nav img {
-    /* -1.2px /80px */
     margin-top: -1.6%;
-    /* =~ 30px/960px */
     margin-left: 3%;
     height: 60px;
     float: left; }
   nav ul {
-    /* =~ 2.5px /80px */
     margin-top: 3.2%;
     margin-left: 60%;
     display: flex;
@@ -70,7 +66,6 @@ nav {
     text-align: center;
     list-style: none; }
   nav li {
-    /* =~ 30px /960px */
     margin-left: 3%; }
   nav a {
     width: 100%;
@@ -82,12 +77,14 @@ nav {
     text-decoration: none; }
     nav a:hover {
       color: #ED5A70; }
+    nav a:focus {
+      color: #ED5A70; }
 
 /* Banner de Entrada */
 #banner {
   position: relative;
   background-image: url(../img/mesa.png);
-  /* A imagem ocupar todo o espa├ºo */
+  /* A imagem ocupar todo o espaco */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,9 +95,9 @@ nav {
   text-align: center; }
   #banner section {
     width: 100%;
-    height: 700px; }
+    height: auto;
+    margin-bottom: 25%; }
   #banner h1 {
-    /* =~ 55px /700px */
     margin-top: 8%;
     font-family: 'Wolf-in-the-City';
     font-size: 4.5em;
@@ -210,7 +207,7 @@ nav {
   height: auto;
   position: relative;
   background-image: url(../img/fundo-portfolio.png);
-  /* A imagem ocupar todo o espa├ºo */
+  /* A imagem ocupar todo o espaco */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,11 +217,12 @@ nav {
   text-align: center;
   padding-bottom: 6%; }
   #portfolio img {
-    width: 30.333333%;
+    width: 30.3333333333%;
     float: left;
     margin-top: 3%;
-    margin-left: 2%;
-    margin-right: 0.5%; }
+    margin-left: 2.3%; }
+  #portfolio img:nth-child(3n + 3) {
+    margin-right: 0.8%; }
 
 article {
   display: flex;
@@ -297,9 +295,5 @@ footer {
   font-size: 0.9em;
   font-weight: 400;
   color: #2B2C30; }
-
-@media (min-width: 1400px) {
-  #banner {
-    padding-bottom: 12%; } }
 
 /*# sourceMappingURL=style.css.map */
