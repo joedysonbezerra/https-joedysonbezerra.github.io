@@ -68,7 +68,7 @@ nav {
     img {
         padding-top: (-1.28 / 80)*100%;
         padding-left: 2%;
-        width: 3.25rem;
+        width: (52/16)*1rem;
         height: 4rem; //height: 60px;
         float: left;
     }
@@ -120,18 +120,18 @@ nav {
     section {
         width: 100%;
         height: auto;
-        margin-bottom: 25%;
+        margin-bottom: 37%;
     }
 
     h1 {
-        padding-top: (30/700)*100%;
+        padding-top: (55/700)*100%;
         font-family: 'Wolf-in-the-City';
         font-size: 4.5em;
         font-weight: 400;
         @extend %texto-sombra;
         color: $cor-secundaria;
         @media (max-width: 750px) {
-            padding-top: (45/700)*100%;
+            padding-top: (50/700)*100%;
 
         }
     }
@@ -234,6 +234,11 @@ nav {
     margin-right: 1%;
     margin-top: 6%;
 
+    img {
+        width: (62/16)*1rem;
+        height: (62/16)*1rem;
+    }
+
     h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 1em;
@@ -317,7 +322,7 @@ article {
             color: $cor-font-conteudo;
         }
         img {
-            width: 50px;
+            width: (50/16)*1rem;
         }
 
     }
@@ -339,8 +344,8 @@ article {
     @include flex(row);
 
     img {
-        width: 80%;
-        height: 80%;
+        width: (64/16)*1rem;
+        height: (64/16)*1rem;
     }
 
 }

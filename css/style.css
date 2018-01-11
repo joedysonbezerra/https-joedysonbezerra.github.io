@@ -100,16 +100,16 @@ nav {
   #banner section {
     width: 100%;
     height: auto;
-    margin-bottom: 25%; }
+    margin-bottom: 37%; }
   #banner h1 {
-    padding-top: 4.2857142857%;
+    padding-top: 7.8571428571%;
     font-family: 'Wolf-in-the-City';
     font-size: 4.5em;
     font-weight: 400;
     color: #fff; }
     @media (max-width: 750px) {
       #banner h1 {
-        padding-top: 6.4285714286%; } }
+        padding-top: 7.1428571429%; } }
 
 #frase1 {
   margin-top: -3.7%;
@@ -198,6 +198,9 @@ nav {
   margin-left: 2%;
   margin-right: 1%;
   margin-top: 6%; }
+  .tamanho-servico img {
+    width: 3.875rem;
+    height: 3.875rem; }
   .tamanho-servico h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -275,7 +278,7 @@ article {
       font-weight: 400;
       color: #2B2C30; }
     #contato-info section img {
-      width: 50px; }
+      width: 3.125rem; }
 
 #email {
   padding-left: 5.5%; }
@@ -290,8 +293,8 @@ article {
   align-items: center;
   text-align: center; }
   #icones-redesocial img {
-    width: 80%;
-    height: 80%; }
+    width: 4rem;
+    height: 4rem; }
 
 /* Footer */
 footer {
