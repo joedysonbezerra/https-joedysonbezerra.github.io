@@ -1,0 +1,38 @@
+/* Servicos */
+
+#servico {
+    width: 100%;
+    height: auto;
+    background-color: $cor-secundaria;
+    @include flex(row);
+    flex-wrap: nowrap;
+    margin-bottom: 8%;
+}
+
+.tamanho-servico {
+    width: 22%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top: 6%;
+
+    img {
+        width: (62/16)*1rem;
+        height: (62/16)*1rem;
+    }
+
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        color: $cor-font-titulo;
+    }
+
+    p {
+        @include font-work(1em,
+        300);
+        color: $cor-font-conteudo;
+    }
+
+}

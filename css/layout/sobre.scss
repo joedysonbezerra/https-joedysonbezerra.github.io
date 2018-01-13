@@ -1,0 +1,41 @@
+/* Sobre */
+
+#sobre {
+    margin: -1.8% auto;
+    width: 100%;
+    height: auto;
+    background-color: $cor-quaternaria;
+    position: relative;
+    @include flex(column);
+    @extend %sombra;
+    padding-bottom: 5%;
+
+    p {
+        margin-top: 5%;
+        width: 95%;
+        @include font-open(1.05em,
+        300);
+        line-height: 25px;
+        color: $cor-font-conteudo;
+        padding-bottom: 3.5%;
+    }
+
+}
+
+#habilidades {
+    padding: 0.4% 3.8%;
+    border: thin solid $cor-terciaria;
+    border-radius: 338px;
+    background-color: $cor-quaternaria;
+    color: $cor-terciaria;
+    text-decoration: none;
+    @include font-open(1em,
+    300);
+
+    &:hover {
+        border-color: $cor-terciaria;
+        background-color: $cor-terciaria;
+        color: $cor-secundaria;
+    }
+
+}

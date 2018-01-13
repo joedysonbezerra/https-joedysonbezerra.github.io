@@ -1,0 +1,30 @@
+/* Portfolio */
+
+#portfolio {
+    height: auto;
+    position: relative;
+    background-image: url(../img/fundo-portfolio.png);
+    /* A imagem ocupar todo o espaco */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include flex(column);
+    @extend %sombra-topo;
+    padding-bottom: 6%;
+    img {
+        width: (100%/3) - 3; // - 3 por causa das margins
+        float: left;
+        margin-top: 3%;
+        margin-left: 2.3%;
+        @extend %sombra;
+    }
+    img:nth-child(3n + 3) {
+        margin-right: 0.8%;
+    }
+
+}
+
+article {
+    @include flex(row);
+
+}
