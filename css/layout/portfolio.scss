@@ -17,6 +17,11 @@
         margin-top: 3%;
         margin-left: 2.3%;
         @extend %sombra;
+        @media (max-width: 768px) {
+            width: 60%;
+            float: none;
+
+        }
     }
     img:nth-child(3n + 3) {
         margin-right: 0.8%;
@@ -26,5 +31,9 @@
 
 article {
     @include flex(row);
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+    }
 
 }

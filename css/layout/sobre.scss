@@ -18,6 +18,10 @@
         line-height: 25px;
         color: $cor-font-conteudo;
         padding-bottom: 3.5%;
+        @media (max-width: 540px) {
+            width: 100%;
+
+        }
     }
 
 }

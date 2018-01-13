@@ -18,6 +18,12 @@
         line-height: 22px;
         color: #727171;
         padding-bottom: 3.5%;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
     }
 
 }
@@ -28,10 +34,18 @@
     position: relative;
     @include flex(row);
 
+    @media (max-width: 1080px) {
+        flex-direction: column;
+
+    }
+
 }
 
 .info {
     width: 50%;
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
     p {
         @include font-open(1em,
         400);
@@ -46,19 +60,32 @@
 
 #email {
     padding-left: 5.5%;
+    @media (max-width: 1080px) {
+        padding-left: 0;
+    }
 }
 
 
 
 #icones-redesocial {
-    margin-top: 5px;
-    padding-left: 41.5%;
-    margin-bottom: 3px;
+    width: 14.0625%;
+    margin: 0 auto;
     @include flex(row);
 
+    @media (max-width: 960px) {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
     img {
-        width: (64/16)*1rem;
-        height: (64/16)*1rem;
+        width: (40/16)*1rem;
+        height: (40/16)*1rem;
+        padding-left: 0.3rem;
+        @media (max-width: 960px) {
+            padding-top: 6%;
+
+        }
     }
 
 }
