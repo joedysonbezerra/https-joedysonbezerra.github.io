@@ -72,7 +72,7 @@ nav {
       nav ul {
         padding-left: 40%; } }
   nav li {
-    padding-left: 3%; }
+    padding-left: 4.1666666667%; }
   nav a {
     width: 100%;
     display: inline-block;
@@ -194,6 +194,7 @@ nav {
   align-items: center;
   text-align: center;
   flex-wrap: nowrap;
+  justify-content: center;
   margin-bottom: 8%; }
   @media (max-width: 768px) {
     #servico {
@@ -201,11 +202,11 @@ nav {
       flex-wrap: wrap; } }
 
 .tamanho-servico {
-  width: 22%;
+  width: 20%;
   height: auto;
   float: left;
-  margin-left: 2%;
-  margin-right: 1%;
+  margin-left: 3%;
+  margin-right: 2%;
   margin-top: 6%; }
   @media (max-width: 768px) {
     .tamanho-servico {
@@ -246,9 +247,9 @@ nav {
     float: left;
     margin-top: 3%;
     margin-left: 2.3%; }
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       #portfolio img {
-        width: 60%;
+        width: 85%;
         float: none; } }
   #portfolio img:nth-child(3n + 3) {
     margin-right: 0.8%; }
@@ -322,23 +323,20 @@ article {
       padding-left: 0; } }
 
 #icones-redesocial {
-  width: 14.0625%;
+  width: 18.75%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: center; }
-  @media (max-width: 960px) {
-    #icones-redesocial {
-      width: 100%;
-      flex-direction: column; } }
+  text-align: center;
+  justify-content: center; }
   #icones-redesocial img {
     width: 2.5rem;
     height: 2.5rem;
     padding-left: 0.3rem; }
     @media (max-width: 960px) {
       #icones-redesocial img {
-        padding-top: 6%; } }
+        padding-top: 8%; } }
 
 /* Footer */
 footer {

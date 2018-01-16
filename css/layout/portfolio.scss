@@ -17,8 +17,8 @@
         margin-top: 3%;
         margin-left: 2.3%;
         @extend %sombra;
-        @media (max-width: 768px) {
-            width: 60%;
+        @media (max-width: 800px) {
+            width: 85%;
             float: none;
 
         }
