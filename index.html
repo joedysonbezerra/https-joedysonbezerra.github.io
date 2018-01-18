@@ -14,14 +14,20 @@
     <header>
         <nav class="alinha">
             <img src="img/JB.svg" alt="JB Logo">
-            <ul id="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a class="ativo" href="#">{PT}</a></li>
-                <li><a href="#">EN</a></li>
-            </ul>
+            <a class="abrir" href="#"><img src="img/menu.svg"></a>
+            <nav class="menu-responsivo">
+                <img id="logo-responsivo" src="img/JB.svg" alt="JB Logo">
+
+                <button class="fechar">Fechar Menu</button>
+                <ul>
+                    <li><a class="link" href="#sobre">Sobre</a></li>
+                    <li><a class="link" href="#servico">Serviços</a></li>
+                    <li><a class="link" href="#portfolio">Portfólio</a></li>
+                    <li><a class="link" href="#contato">Contato</a></li>
+                    <li><a class="ativo link" href="#">{PT}</a></li>
+                    <li><a class="link" href="#">EN</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
 
@@ -123,6 +129,7 @@
             <footer>Copyright © 2018 Joédyson Bezerra. Todos os Direitos reservados.</footer>
         </section>
     </article>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

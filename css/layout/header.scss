@@ -7,6 +7,8 @@ header {
     position: fixed;
     @extend %sombra;
     z-index: 1;
+
+
 }
 
 nav {
@@ -15,28 +17,41 @@ nav {
     position: relative;
     display: flex;
     flex-direction: row;
-
-
+    flex-wrap: nowrap;
     img {
         padding-top: design-fluido(-1.28, 80);
         padding-left: 2%;
         width: (52/16)*1rem;
         height: 4rem; //height: 60px;
         float: left;
+        @media (max-width: 768px) {
+            padding-top: design-fluido(3, 80);
+        }
+        @media (max-width: 450px) {
+            padding-top: design-fluido(4, 80);
+        }
+
     }
+
     ul {
+        justify-content: flex-end;
         padding-top: design-fluido(1, 80);
-        padding-left: 50%;
         @include flex(row);
         list-style: none;
-        @media (max-width: 750px) {
-            padding-left: 40%;
-
+        @media (max-width: 768px) {
+            @include flex(column);
+            padding-left: 0;
         }
+
     }
 
     li {
-        padding-left: design-fluido(40, 960);
+        padding-left: design-fluido(12, 960);
+        @media (max-width: 768px) {
+            padding-top:1em;
+            padding-left: 0;
+            width: 100%;
+        }
     }
 
     a {
@@ -46,6 +61,9 @@ nav {
         600);
         color: $cor-sombra;
         text-decoration: none;
+        @media (max-width: 768px) {
+            font-size: 1.25em;
+        }
 
         &:hover {
             color: $cor-base;
@@ -54,5 +72,77 @@ nav {
         &:focus {
             color: $cor-base;
         }
+    }
+
+}
+
+.abrir {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: fixed;
+    top: 3%;
+    left: 85%;
+
+}
+
+
+.abrir img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+#logo-responsivo {
+    float: none;
+    padding-bottom: 0.5rem;
+}
+
+
+
+// menu responsivo 
+@media (max-width: 768px) {
+
+    .menu-responsivo {
+        @include flex(column);
+        background: $cor-quaternaria;
+        padding: 1em;
+        margin: 0;
+
+
+        height: 100%;
+        width: 90%;
+        max-width: 320px;
+
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -100%;
+
+        transition: left 0.5s ease-out;
+    }
+
+    .menu-ativo .menu-responsivo {
+        left: 0;
+    }
+
+    .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba($cor-sombra, 0.4);
+    }
+
+}
+
+@media not all and (max-width: 768px) {
+    .abrir,
+    .fechar,
+    #logo-responsivo {
+        display: none;
     }
 }

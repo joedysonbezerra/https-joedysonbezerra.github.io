@@ -53,26 +53,42 @@ nav {
   height: 80px;
   position: relative;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: nowrap; }
   nav img {
     padding-top: -1.6%;
     padding-left: 2%;
     width: 3.25rem;
     height: 4rem;
     float: left; }
+    @media (max-width: 768px) {
+      nav img {
+        padding-top: 3.75%; } }
+    @media (max-width: 450px) {
+      nav img {
+        padding-top: 5%; } }
   nav ul {
+    justify-content: flex-end;
     padding-top: 1.25%;
-    padding-left: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     list-style: none; }
-    @media (max-width: 750px) {
+    @media (max-width: 768px) {
       nav ul {
-        padding-left: 40%; } }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 0; } }
   nav li {
-    padding-left: 4.1666666667%; }
+    padding-left: 1.25%; }
+    @media (max-width: 768px) {
+      nav li {
+        padding-top: 1em;
+        padding-left: 0;
+        width: 100%; } }
   nav a {
     width: 100%;
     display: inline-block;
@@ -81,11 +97,64 @@ nav {
     font-weight: 600;
     color: #000;
     text-decoration: none; }
+    @media (max-width: 768px) {
+      nav a {
+        font-size: 1.25em; } }
     nav a:hover {
       color: #ED5A70; }
     nav a:focus {
       color: #ED5A70; }
 
+.abrir {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: fixed;
+  top: 3%;
+  left: 85%; }
+
+.abrir img {
+  width: 1.8rem;
+  height: 1.8rem; }
+
+#logo-responsivo {
+  float: none;
+  padding-bottom: 0.5rem; }
+
+@media (max-width: 768px) {
+  .menu-responsivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f3f4f4;
+    padding: 1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-out; }
+
+  .menu-ativo .menu-responsivo {
+    left: 0; }
+
+  .menu-ativo:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4); } }
+@media not all and (max-width: 768px) {
+  .abrir,
+  .fechar,
+  #logo-responsivo {
+    display: none; } }
 /* Banner de Entrada */
 #banner {
   position: relative;
