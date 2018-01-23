@@ -11,21 +11,7 @@
     @include flex(column);
     @extend %sombra-topo;
     padding-bottom: 6%;
-    img {
-        width: (100%/3) - 3; // - 3 por causa das margins
-        float: left;
-        margin-top: 3%;
-        margin-left: 2.3%;
-        @extend %sombra;
-        @media (max-width: 800px) {
-            width: 85%;
-            float: none;
 
-        }
-    }
-    img:nth-child(3n + 3) {
-        margin-right: 0.8%;
-    }
 
 }
 
@@ -36,4 +22,68 @@ article {
 
     }
 
+}
+
+.img {
+    width: (100%/3)-3;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 2.3%;
+    float: left;
+    @media (max-width: 800px) {
+        width: 75%;
+        float: none;
+    }
+    &:nth-child(3n + 3) {
+        margin-right: 0.8%;
+        @media (max-width: 800px) {
+            margin-right: 0;
+        }
+    }
+    img {
+        width: 100%;
+        @extend %sombra;
+        @media (max-width: 800px) {
+            width: 75%;
+        }
+    }
+    .outra-div {
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        color: $cor-secundaria;
+        opacity: 0;
+        background: darken(rgba($cor-base, .7), 10%);
+        transition: all .35s ease;
+        @media (max-width: 800px) {
+            display: none;
+        }
+    }
+
+    .outra-div:hover {
+        opacity: 1;
+        @media (max-width: 800px) {
+            display: none;
+        }
+    }
+
+    h1 {
+        position: relative;
+        top: 35%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $cor-secundaria;
+    }
+    p {
+        position: relative;
+        top: 33%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $cor-secundaria;
+    }
 }

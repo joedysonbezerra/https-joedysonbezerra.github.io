@@ -40,6 +40,7 @@
         border-color: $cor-terciaria;
         background-color: $cor-terciaria;
         color: $cor-secundaria;
+        @extend %anima;
     }
 
 }

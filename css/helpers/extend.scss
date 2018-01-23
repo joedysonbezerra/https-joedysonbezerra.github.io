@@ -12,3 +12,8 @@
     box-shadow: 1px -1px 10px rgba($cor-sombra, 0.2);
 
 }
+
+%anima {
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+}

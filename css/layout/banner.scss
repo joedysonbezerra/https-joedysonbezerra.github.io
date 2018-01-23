@@ -89,6 +89,7 @@
         border-color: $cor-secundaria;
         background-color: $cor-secundaria;
         color: $cor-base;
+        @extend %anima;
     }
 
 }
