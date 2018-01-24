@@ -75,8 +75,8 @@ nav {
   nav img {
     padding-top: -1.6%;
     padding-left: 2%;
-    width: 3.25rem;
-    height: 4rem;
+    width: 3.0625rem;
+    height: 3rem;
     float: left; }
     @media (max-width: 768px) {
       nav img {
@@ -140,7 +140,8 @@ nav {
 .fechar {
   width: 1.5rem;
   height: 1.5rem;
-  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   margin-right: 1.5rem; }
 
 @media (max-width: 768px) {

@@ -21,8 +21,8 @@ nav {
     img {
         padding-top: design-fluido(-1.28, 80);
         padding-left: 2%;
-        width: (52/16)*1rem;
-        height: 4rem; //height: 60px;
+        width: (49/16)*1rem;
+        height: 3rem; //height: 60px;
         float: left;
         @media (max-width: 768px) {
             padding-top: design-fluido(3, 80);
@@ -99,7 +99,8 @@ nav {
 .fechar {
     width: 1.5rem;
     height: 1.5rem;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     margin-right: 1.5rem;
 }
 
