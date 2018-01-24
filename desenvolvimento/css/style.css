@@ -72,17 +72,17 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap; }
-  nav svg {
+  nav img {
     padding-top: -1.6%;
     padding-left: 2%;
     width: 3.25rem;
     height: 4rem;
     float: left; }
     @media (max-width: 768px) {
-      nav svg {
+      nav img {
         padding-top: 3.75%; } }
     @media (max-width: 450px) {
-      nav svg {
+      nav img {
         padding-top: 5%; } }
   nav ul {
     justify-content: flex-end;
