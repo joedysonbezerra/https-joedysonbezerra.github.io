@@ -1,4 +1,4 @@
 # JB
 
 Site - https://joedysonbezerra.github.io
-Palestras https://joedysonbezerra.github.io/palestras
+Palestras Ionic https://joedysonbezerra.github.io/palestras/ionic.pdf
