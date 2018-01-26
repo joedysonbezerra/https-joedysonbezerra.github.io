@@ -1,0 +1,49 @@
+::-webkit-scrollbar-track {
+    background-color: $cor-quaternaria;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    border-radius: 10px;
+    background: $cor-quaternaria;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $cor-base;
+    box-shadow: rgba($cor-sombra, 0.4);
+}
+
+
+
+/* Geral */
+
+.alinha {
+    margin: 0 auto;
+    /* 960 */
+    width: 67.5%;
+    max-width: 1900px;
+
+}
+
+.ativo {
+    color: $cor-base;
+}
+
+.titulo {
+    margin-top: 8%;
+    @include font-open(1.5em,
+    700);
+    color: $cor-font-titulo;
+    text-transform: uppercase;
+}
+
+.linha {
+    width: 5%;
+    min-width: 48px;
+    height: 2.5px;
+    border: 0;
+    border-radius: 5px;
+    border-color: $cor-terciaria;
+    background-color: $cor-terciaria;
+}

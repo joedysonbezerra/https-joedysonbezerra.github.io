@@ -1,0 +1,19 @@
+//Extends
+%texto-sombra {
+    text-shadow: 0.5px 0.5px 0.5px rgba($cor-sombra, 0.3);
+}
+
+%sombra {
+    box-shadow: 2px 2px 2px rgba($cor-sombra, 0.2);
+
+}
+
+%sombra-topo {
+    box-shadow: 1px -1px 10px rgba($cor-sombra, 0.2);
+
+}
+
+%anima {
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+}

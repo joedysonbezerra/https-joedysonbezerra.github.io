@@ -1,0 +1,3 @@
+@function design-fluido($objeto, $contexto) {
+    @return ($objeto/$contexto)*100%;
+}

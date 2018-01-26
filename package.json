@@ -1,0 +1,24 @@
+{
+  "name": "jb",
+  "version": "1.0.0",
+  "description": "Site pessoal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joedysonbezerra/joedysonbezerra.github.io"
+  },
+  "author": "Joédyson Bezerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joedysonbezerra/https-joedysonbezerra.github.io/issues"
+  },
+  "homepage": "https://github.com/joedysonbezerra/https-joedysonbezerra.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0"
+  }
+}

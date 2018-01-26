@@ -1,0 +1,100 @@
+/*contato */
+
+#contato {
+    margin: -1.8% auto;
+    width: 100%;
+    height: auto;
+    background-color: $cor-secundaria;
+    position: relative;
+    @include flex(column);
+    @extend %sombra-topo;
+    p {
+        margin-top: 5%;
+        width: 38%;
+        margin-left: 31%;
+        margin-right: 31%;
+        @include font-open(1.05em,
+        400);
+        line-height: 22px;
+        color: #727171;
+        padding-bottom: 3.5%;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+    }
+
+}
+
+#contato-info {
+    margin-top: 3px;
+    width: 100%;
+    position: relative;
+    @include flex(row);
+
+    @media (max-width: 1080px) {
+        flex-direction: column;
+
+    }
+
+}
+
+.info {
+    width: 50%;
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
+    p {
+        @include font-open(1em,
+        400);
+        @extend %texto-sombra;
+        color: $cor-font-conteudo;
+    }
+    img {
+        width: (50/16)*1rem;
+    }
+
+}
+
+#email {
+    padding-left: 5.5%;
+    @media (max-width: 1080px) {
+        padding-left: 0;
+    }
+}
+
+
+
+#icones-redesocial {
+    width: ((45*4)/960)*100%;
+    margin: 0 auto;
+    @include flex(row);
+    justify-content: center;
+
+    img {
+        width: (40/16)*1rem;
+        height: (40/16)*1rem;
+        padding-left: 0.3rem;
+        @media (max-width: 960px) {
+            padding-top: 8%;
+
+        }
+    }
+
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 5px;
+    padding-left: 0.5%;
+    padding-bottom: 5px;
+    @include font-work(0.9em,
+    400);
+    color: $cor-font-conteudo;
+    @extend %texto-sombra;
+
+}
