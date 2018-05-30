@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <style>
+      body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    </style>
+    <title>AGENDA</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper  blue darken-1">
+                <a href="https://joedysonbezerra.github.io" class="brand-logo center">AGENDA<i class="material-icons">assignment</i></a>
+            </nav>
+    </div>
+    <main id="app">
+        <ul class="collection center">
+        </ul>
+        <div class="row">
+            <div class="input-field col s12">
+                <input value=" " type="text" class="validate">
+                <label class="active" for="first_name2">Digite a tarefa a fazer !</label>
+            </div>
+            <div class="col s12 center"> 
+                <a id='submit' class="waves-effect waves-light btn"><i class="material-icons right">send</i>Adicionar</a>
+            </div>  
+        </div>
+</main>
+    <footer class="page-footer blue lighten-2">
+    <div class="footer-copyright">
+            <div class="container">
+                <a href="https://joedysonbezerra.github.io/"><p class="center-align white-text">2018 © Feito por - Joédyson Bezerra</p></a>
+            </div>
+          </div>
+    </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
